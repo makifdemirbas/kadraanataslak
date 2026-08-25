@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kadra Yayıncılık | Düşüncenin ve Sanatın Kadrajı</title>
+    
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#111111',
+                        secondary: '#f9f9f9',
+                        accent: '#eaeaea',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Ekstra minimal dokunuşlar ve scroll gizleme */
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        ::selection {
+            background-color: #111;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="text-primary bg-white selection:bg-primary selection:text-white">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md shadow-sm border-b border-accent z-50 transition-all duration-300 py-4">
+        <div class="container mx-auto px-6 max-w-6xl flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
+            <!-- Ana Logo -->
+            <a href="#anasayfa" class="block transition-transform hover:scale-105">
+                <img src="1.png" alt="Kadra Yayıncılık Ana Logosu" class="h-12 md:h-16 object-contain">
+            </a>
+            
+            <!-- Menü -->
+            <nav>
+                <ul class="flex flex-wrap justify-center gap-6 md:gap-8">
+                    <li><a href="#anasayfa" class="text-sm font-medium uppercase tracking-wider hover:text-gray-500 transition-colors">Anasayfa</a></li>
+                    <li><a href="#markalar" class="text-sm font-medium uppercase tracking-wider hover:text-gray-500 transition-colors">Markalarımız</a></li>
+                    <li><a href="#hakkimizda" class="text-sm font-medium uppercase tracking-wider hover:text-gray-500 transition-colors">Hakkımızda</a></li>
+                    <li><a href="#iletisim" class="text-sm font-medium uppercase tracking-wider hover:text-gray-500 transition-colors">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Anasayfa (Hero) Bölümü -->
+        <section id="anasayfa" class="pt-48 pb-24 px-6 text-center bg-white min-h-[70vh] flex flex-col justify-center items-center">
+            <div class="container mx-auto max-w-4xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 tracking-tight">
+                    DÜŞÜNCENİN VE SANATIN KADRAJI:<br>
+                    <span class="font-black">KADRA YAYINCILIK</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-500 font-light tracking-wide">
+                    Geleceğin Vizyonu, Özgün İçeriklerle
+                </p>
+            </div>
+        </section>
+
+        <!-- Markalar Bölümü -->
+        <section id="markalar" class="py-24 px-6 bg-secondary">
+            <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl font-semibold text-center uppercase tracking-widest mb-16">Markalarımız</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Kadra Fotoğraf -->
+                <a href="urlyaz1" target="_blank" rel="noopener noreferrer" title="Kadra Fotoğraf Sitesine Git" class="group bg-white p-8 rounded-lg border border-accent text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-gray-300">
+                    <img src="2.png" alt="Kadra Fotoğraf" class="h-24 mx-auto mb-6 object-contain group-hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-lg font-bold mb-3 uppercase tracking-wide">Kadra Fotoğraf</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">
+                        Fotoğraf sanatına odaklanan, özgün üretimleri ve fotoğraf kültürünü dijital ortamda yayımlayan bir sanat platformudur.
+                    </p>
+                </a>
+
+                <!-- Kadra Sinema -->
+                <a href="urlyaz2" target="_blank" rel="noopener noreferrer" title="Kadra Sinema Sitesine Git" class="group bg-white p-8 rounded-lg border border-accent text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-gray-300">
+                    <img src="3.png" alt="Kadra Sinema" class="h-24 mx-auto mb-6 object-contain group-hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-lg font-bold mb-3 uppercase tracking-wide">Kadra Sinema</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">
+                        Sinema sanatına odaklanan; film, yönetmen, yapım ve sinema kültürünü dijital ortamda buluşturan platform.
+                    </p>
+                </a>
+
+                <!-- Kadra Sanat -->
+                <a href="urlyaz3" target="_blank" rel="noopener noreferrer" title="Kadra Sanat Sitesine Git" class="group bg-white p-8 rounded-lg border border-accent text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-gray-300">
+                    <img src="4.png" alt="Kadra Sanat" class="h-24 mx-auto mb-6 object-contain group-hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-lg font-bold mb-3 uppercase tracking-wide">Kadra Sanat</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">
+                        Sanatın farklı disiplinlerine odaklanan; özgün üretimleri, sanatçıları ve sanat kültürünü dijitalde buluşturan platform.
+                    </p>
+                </a>
+
+                <!-- Kadra Akademi -->
+                <a href="urlyaz4" target="_blank" rel="noopener noreferrer" title="Kadra Akademi Sitesine Git" class="group bg-white p-8 rounded-lg border border-accent text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-gray-300">
+                    <img src="5.png" alt="Kadra Akademi" class="h-24 mx-auto mb-6 object-contain group-hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-lg font-bold mb-3 uppercase tracking-wide">Kadra Akademi</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">
+                        Fotoğraf, sinema ve sanat alanlarında bilgi, düşünce ve üretimi geliştiren; eğitim ve akademik içerikler sunan dijital platform.
+                    </p>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+        <!-- Hakkımızda Bölümü -->
+        <section id="hakkimizda" class="py-24 px-6 bg-white">
+            <div class="container mx-auto max-w-4xl text-center">
+                <h2 class="text-3xl font-semibold uppercase tracking-widest mb-10">Hakkımızda</h2>
+                
+                <!-- Motto Bölümü -->
+                <div class="mb-10 relative">
+                    <span class="text-6xl text-gray-200 absolute -top-4 left-0 md:left-10 font-serif">"</span>
+                    <h3 class="text-2xl md:text-3xl font-medium text-primary italic mb-4 px-8 md:px-16 leading-relaxed">
+                        Gördüğünü seçen, seçtiğini sanatla anlatan; anlattığını yayıncılıkla geleceğe taşıyan marka.
+                    </h3>
+                    <span class="text-6xl text-gray-200 absolute -bottom-8 right-0 md:right-10 font-serif">"</span>
+                </div>
+
+                <!-- Detaylı Metin -->
+                <div class="space-y-6 text-gray-600 leading-relaxed text-lg font-light text-justify md:text-center mt-12">
+                    <p>
+                        Kadra Yayıncılık olarak bizim için yayıncılık; yalnızca bir içeriği sunmak değil, bir düşünceyi, estetik bir kadrajı ve değerli bir sanat eserini zamanın ötesine taşıma sanatıdır. Kurulduğumuz ilk günden bu yana, kültürel gelişime katkıda bulunma misyonumuzla, farklı disiplinlerdeki bilgi birikimini yenilikçi ve ilkeli bir yaklaşımla harmanlıyoruz.
+                    </p>
+                    <p>
+                        Bünyemizde yer alan <strong class="font-medium text-primary">Kadra Fotoğraf</strong>, <strong class="font-medium text-primary">Kadra Sinema</strong> ve <strong class="font-medium text-primary">Kadra Sanat</strong> markalarımızla; fotoğrafın anı durduran gücünü, sinemanın görsel hikaye anlatıcılığını ve sanatın sınır tanımayan disiplinlerini dijital dünyada buluşturuyoruz. Bu özgün üretimleri sadece yayımlamakla kalmıyor; <strong class="font-medium text-primary">Kadra Akademi</strong> çatısı altında bilgi, düşünce ve üretimi geliştiren eğitimler, akademik çalışmalar sunarak entelektüel bir zemin inşa ediyoruz.
+                    </p>
+                    <p>
+                        Gelenekten beslenip geleceğe yön veren vizyonumuzla, sanatı ve akademiyi tek bir çatıda toplayarak; okurlarımıza, izleyicilerimize ve katılımcılarımıza nitelikli, kalıcı bir kültür-sanat evreni sunmaya büyük bir tutkuyla devam ediyoruz.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- İletişim Bölümü -->
+        <section id="iletisim" class="py-24 px-6 bg-secondary border-t border-accent border-b">
+            <div class="container mx-auto max-w-3xl text-center">
+                <h2 class="text-3xl font-semibold uppercase tracking-widest mb-10">İletişim</h2>
+                
+                <div class="bg-white p-10 md:p-16 rounded-xl shadow-sm border border-accent">
+                    <p class="text-gray-500 mb-10 font-light text-lg">
+                        Kurumsal işbirlikleri, yayın teklifleri ve her türlü soru, görüş ve öneriniz için iletişim kanallarımız üzerinden profesyonel ekibimize ulaşabilirsiniz.
+                    </p>
+                    
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20">
+                        <!-- E-Posta -->
+                        <div class="text-center group">
+                            <span class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">E-Posta Adresi</span>
+                            <a href="mailto:kadrayayincilik@gmail.com" class="text-xl font-medium text-primary hover:text-gray-500 transition-colors inline-block relative">
+                                kadrayayincilik@gmail.com
+                                <span class="absolute -bottom-1 left-0 w-0 h-px bg-gray-500 transition-all group-hover:w-full"></span>
+                            </a>
+                        </div>
+                        
+                        <!-- Telefon -->
+                        <div class="text-center group">
+                            <span class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Telefon Numarası</span>
+                            <a href="tel:05010025716" class="text-xl font-medium text-primary hover:text-gray-500 transition-colors inline-block relative">
+                                0 501 002 57 16
+                                <span class="absolute -bottom-1 left-0 w-0 h-px bg-gray-500 transition-all group-hover:w-full"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Alt Bilgi (Footer) -->
+    <footer class="bg-primary text-white py-10 px-6 text-center">
+        <div class="container mx-auto">
+            <p class="text-sm font-light tracking-wider text-gray-400">
+                &copy; Kadra Yayıncılık <span id="copyright-year"></span>. Tüm hakları saklıdır.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Dinamik Yıl Scripti -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const baseYear = 2026;
+            const currentYear = new Date().getFullYear();
+            const yearElement = document.getElementById('copyright-year');
+            
+            // Eğer bulunduğumuz yıl 2026'dan büyükse aralık göster (Örn: 2026-2027)
+            // Değilse sadece başlangıç yılını göster (Örn: 2026)
+            if (currentYear > baseYear) {
+                yearElement.textContent = `${baseYear}-${currentYear}`;
+            } else {
+                yearElement.textContent = `${baseYear}`;
+            }
+        });
+    </script>
+</body>
+</html>
